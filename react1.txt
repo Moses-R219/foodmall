@@ -1,0 +1,79 @@
+emmet
+async and defer
+cors
+crossorgin
+
+
+BUNDLER ---------PARCEL,WEBPACK,VITE,ESBLIND
+PARCEL IS BEST TOOL FOR BUNDLER WHICH HAVE ALL MODULES ARE WRITTEN AND GIVE OUTPUT AS JS FILE
+HMR-(HOT MODULE REPLACEMENT) automatically reloads the live localhost when any file changes it uses FILE WATCHER Algorithm which is written in C++
+Parcel is used to remove console log but it not 
+
+
+npm init will  generate package.json
+npm i -D parcel to install it as devDependencies only for developer machine not in production
+script types ---- homework
+
+we need to add package-lock.json in git dont add in gitignore
+
+
+
+
+npx==npm run
+babel plugin transform remove console
+react conciliation key react documentation 	
+no same key for two tags/elements or siblings 
+React.createElement gives us an Object
+what is difference between HTML and JSX
+
+JSX uses React.createElement in backend most of us don't know   babel converts JSX into React.createElement
+
+
+const head=<h1>Namaste React</h1>------->JSX
+	|
+	|
+	|
+const head=React.createElement("h1",{},"Namaste react"); converted by Babel
+
+
+
+Functional Component---it is normal function in javascript
+
+Component name starts with Capital Letter it is not must but it is recommended for good practice.
+
+Component Composition----using component inside component it is kown as component composition
+
+
+React.Fragment is used to avoid the use of extra div when there is already div with id="root"
+React.Fragment is a component which is exported from React ----it is like an empty tag <></>
+jsx must have one and only parent element
+
+
+can we use React.Fragment inside React.Fragment?
+Optional chaining (?.)
+React Key ---uses reconciliation diff Algorithm
+React Fiber archtitecture
+Never ever use index as key in react
+
+
+We can export component by two types
+	1.export  by default 
+		syntax:export default Title 
+	2.export  by name(const) 
+		syntax:export const Title 
+export default is used for exporting only one component
+
+While importing these they will differ
+	import Title from "./component/Title";-------Default import
+	import {Title} from "./component/Title";-------Named import
+
+
+
+Hooks==
+		It is normal function with some extra function
+useState return a new array which is used to store an local state variable
+const [variable_name,function to change variable_name]=useState();
+
+
+
+img https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/lb39blos1elub2gfjm9q
