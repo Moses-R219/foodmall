@@ -19,24 +19,43 @@
     padding: 10px;
 }
 
-.card {
-    width: 200px;
-    border: 1px solid black;
-    padding: 10px;
+.restaurant-list{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
 }
 
-.card img {
-    width: 100%;
+.size{
+    width: 200px;
+    height: 200px;
 }
-.restaurant-list{
-    display: flex;
-    justify-content: space-between;
+.card{
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
     padding: 10px;
-    
+    margin: 20px;
+    cursor: pointer;
+    color: rgb(122, 121, 121);
 }
+
+.card > img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
 
 
 
 .search{
     padding: 10px;
+}
+
+.wrap{
+    word-wrap: break-word;
+    text-shadow: -2px -2px #aeced5
 }

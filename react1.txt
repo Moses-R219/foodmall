@@ -77,3 +77,13 @@ const [variable_name,function to change variable_name]=useState();
 
 
 img https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/lb39blos1elub2gfjm9q
+
+useEffect===>
+		useEffect((callback),dependency)
+		empty array dependency=== will be called once after rendering
+		dependency array[variable_name]===will be called once + again for everytime changes in value	
+
+shimmer effect 
+
+
+api link:https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.3355423&lng=77.7143421&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING
