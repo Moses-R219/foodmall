@@ -59,3 +59,20 @@
     word-wrap: break-word;
     text-shadow: -2px -2px #aeced5
 }
+
+.multiple{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.shimmer-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    height: 200px;
+    background-color: lightgrey;
+}
