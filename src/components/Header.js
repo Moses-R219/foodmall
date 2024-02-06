@@ -1,13 +1,10 @@
 import { useState } from "react";
-
-const LoggedUser=()=>{
-    return true;
-}
-
+import { Link } from "react-router-dom";
+import Logo from "../assets/logo.jpg"
 export const Title=()=>{
     return(
         <a href="/" >
-            <img className="logo" src="https://cdnb.artstation.com/p/assets/images/images/049/298/599/large/irina-biswas-crispy-logo.jpg?1652176976" alt="Logo"/>
+            <img className="logo" src={Logo} alt="Logo"/>
         </a>
     )
 };
@@ -20,9 +17,10 @@ const Header=()=>{
             <Title/>
             <div className="nav-items">
                 <ul>
-                    <li>Home</li>
-                    <li>ABout us</li>
-                    <li>Cart</li>
+                   <Link to="/"> <li>Home</li></Link>
+                   <Link to="/about"> <li>ABout us</li></Link>
+                   <Link to="/contact"> <li>Contact</li></Link>
+                   <li>Cart</li>
                 </ul>
             </div>
             {

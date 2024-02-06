@@ -87,10 +87,25 @@ shimmer effect
 
 
 api link:https://www.swiggy.com/dapi/restaurants/list/v5?lat=11.3355423&lng=77.7143421&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING'
-
+https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0826802&lng=80.2707184&page_type=DESKTOP_WEB_LISTING
 
 useEffect--it will render only after initial rendering finished
 
 
 
 formik website templates to create forms in react 
+
+npm install react-router-dom
+
+createBrowserRouter--- it contains list of path each path is an object like below
+{
+	path:"/"
+	element:<Component name/>
+	errorElement:to render error,
+	children:[]---it contains list of nested path and element to render
+}
+
+
+<Outlet/>--- it will take charge to load the children component
+
+Menu api:"https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.89960&lng=80.22090&restaurantId=64700&catalog_qa=undefined&submitAction=ENTER"
