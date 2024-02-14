@@ -76,3 +76,34 @@
     height: 200px;
     background-color: lightgrey;
 }
+
+.menuImg{
+    width:350px;
+     height:400px;
+    
+}
+.menus {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menus > div {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .menuImg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Optional: Style for the list items */
+  .menu-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-list li {
+    padding: auto;
+  }
+  

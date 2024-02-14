@@ -109,3 +109,13 @@ createBrowserRouter--- it contains list of path each path is an object like belo
 <Outlet/>--- it will take charge to load the children component
 
 Menu api:"https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.89960&lng=80.22090&restaurantId=64700&catalog_qa=undefined&submitAction=ENTER"
+
+
+Object.values()---read about this
+
+while using map dont forget about key index value
+
+-------------------------
+data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards[0].card.info
+data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card.itemCards
+------------------------
