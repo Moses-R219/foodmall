@@ -119,3 +119,97 @@ while using map dont forget about key index value
 data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards[0].card.info
 data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card.itemCards
 ------------------------
+******************************
+ch-8--lets get classy
+******************************
+class based components 
+
+class ClassComponent extends React.component{}--normal javascript class but React.component decides it as class components
+
+constructor(props){
+Q1)))	super(props)---why we using super(props)
+}
+inside constructor we create state variable
+this.state--=holds the object of variables
+this.state={
+	count:0,
+} 
+
+-----to update this state variable
+	we use this.setState({
+		count:1,
+	})
+	**WE DO NOT MUTATE STATE DIRECTLY LIKE
+			this.state.count=1----wrong way
+REACT LIFECYLCE
+	1.constructor is called
+	2.render method called
+	3.componentDidMount()  called
+
+why we call api in useEffect and component?
+	Because it runs after rendered..
+	api call is done in useEffect() call--it is called after rendered
+
+Two phases--
+Render phases--includes constructor and render method
+Commit phases--includes modifying dom,componentDidMount
+
+
+Q2)))We can use async on componentDidMount but we cannot use async on callback of useEffect()
+
+
+1.componentDidMount--after first render it will be called only once
+2.componentDidUpdate--after each and every subsequent render,after any changes in state
+3.componentWillUnmount--after changing the page denotes that unloading the component
+
+Till now we have seen hooks like	
+	useEffect()
+	useState()
+	useParams() from react-router-dom
+	useRouterError() from react-router-dom
+
+************************
+CH-9 Optimizing app
+************************
+
+utils--helper function
+	this makes more readable,reusable and  more testable
+
+created useRestaurantMenu(our own custom hook) component for api call which gets resId from RestaurantMenu component
+functional component which will return some JSX but hooks return some logic or extract some logic
+
+make api call of food menu into const name="";
+adding new feature to check user is online or offline by creating useOnline() component
+
+*********************
+const useOnline=()=>{
+    const [status,setStatus]=useState(true);
+    useEffect(()=>{
+        window.addEventListener('online',()=>{
+            setStatus(true);
+        })
+        window.addEventListener('offline',()=>{
+            setStatus(false);
+        })
+    },[])
+
+    return status;
+}
+****************
+the above component is bad way we are not doing removeListener this is not good practice for developer
+
+
+homework--make restaurants also custom hook
+
+chunking
+code splitting
+Dynamic bundling
+lazy loading
+on demand loading
+Dynamic Import
+
+
+On demand loading--on rendering ---it will suspend the rendering
+
+lazy()
+<Suspense></Suspense>
