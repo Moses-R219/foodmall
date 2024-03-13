@@ -12,7 +12,7 @@ const Body = () => {
   const [search, setSearch] = useState("");
   const allRestaurants=useRestaurant({setFilteredRestaurants})
   const status=useOnline();
-
+  console.log(status);
   if(!status){
     return(<div>
       <h1>No Internet🛜</h1>
@@ -27,6 +27,7 @@ const Body = () => {
     <>
       <div className="search">
         <input
+        className="px-5"
           type="text"
           placeholder="search"
           value={search}
@@ -41,11 +42,11 @@ const Body = () => {
           Search
         </button>
       </div>
-      <div className="restaurant-list">
+      <div className="flex flex-wrap ">
         {filteredRestaurants?.map((restaurant) => {
           return (
           <Link to={"/restaurant/"+restaurant.info.name+"/"+restaurant.info.id}  key={restaurant.info.id}>
-            <RestaurantCard {...restaurant.info}  />
+            <RestaurantCard className="shadow-lg " {...restaurant.info}  />
           </Link>
           );
         })}

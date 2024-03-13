@@ -4,7 +4,7 @@ import Logo from "../assets/logo.jpg"
 export const Title=()=>{
     return(
         <a href="/" >
-            <img className="logo" src={Logo} alt="Logo"/>
+            <img className="h-16 py-1 mt-3 mix-blend-darken" src={Logo} alt="Logo"/>
         </a>
     )
 };
@@ -12,15 +12,16 @@ export const Title=()=>{
 const Header=()=>{
     const [isLoggedIn,setIsLoggedIn]=useState(false);
     return (
-        <>
-        <div className="container">
+    
+        <div className="flex justify-between bg-indigo-50">
             <Title/>
-            <div className="nav-items">
-                <ul>
-                   <Link to="/"> <li>Home</li></Link>
-                   <Link to="/about"> <li>ABout us</li></Link>
-                   <Link to="/contact"> <li>Contact</li></Link>
-                   <li>Cart</li>
+            <div>
+                <ul className="flex py-10">
+                   <Link to="/"> <li className="px-5">Home</li></Link>
+                   <Link to="/about"> <li className="px-5">ABout us</li></Link>
+                   <Link to="/contact"> <li className="px-5">Contact</li></Link>
+                   <li className="px-5">Cart</li>
+                   <Link to="/instamart"> <li className="px-5">Instamart</li></Link>
                 </ul>
             </div>
             {
@@ -28,7 +29,6 @@ const Header=()=>{
             }
         </div>
     
-        </>
     )
 }
 
