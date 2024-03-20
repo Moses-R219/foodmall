@@ -231,3 +231,23 @@ Tailwind--gonna be use
 
 tailwind provide us default classname value which is fixed we need to provide our own value
 then we give w-[inside value]
+
+
+
+
+
+
+
+
+
+--------------------
+CH-11 
+-------------------
+HIGHER ORDER COMPONENT
+		get a component return a component
+
+accordion styling 
+
+created categories component for menu 
+and item list  component for accordion body menus
+Controlled and uncontrolled component

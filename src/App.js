@@ -47,7 +47,7 @@ const appRoute = createBrowserRouter([
             element:<Contact/>
         },
         {
-          path:"/restaurant/:restaurantname/:id",
+          path:"/restaurant/:restaurantname/:resid",
           element:<RestaurantMenu/>
         },{
           path:"/instamart",

@@ -9,4 +9,20 @@ const RestaurantCard=({name,cloudinaryImageId,cuisines})=>{
         </div>
     )
 }
+
+
+//Higher Order Component
+
+//promotedcard component gets component as input
+
+export const withPromoted=(RestaurantCard)=>{
+    return(props)=>{
+        return(
+            <div>
+                <label>Promoted</label>
+                <RestaurantCard items={props}/>
+            </div>
+        )
+    }
+}
 export default RestaurantCard;

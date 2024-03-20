@@ -16,7 +16,7 @@ const Header=()=>{
         <div className="flex justify-between bg-indigo-50">
             <Title/>
             <div>
-                <ul className="flex py-10">
+                <ul className="flex py-8">
                    <Link to="/"> <li className="px-5">Home</li></Link>
                    <Link to="/about"> <li className="px-5">ABout us</li></Link>
                    <Link to="/contact"> <li className="px-5">Contact</li></Link>
